@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {margin: 0;
+    padding: 0;
+    }
+
+h1, h2, h4 {font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;}
+
+h1{font-size: 2.2rem;
+    text-align: center;}
+
+body {font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFF8FB;}
+
+.gridelementos {display:grid;
+    grid-template-areas: 'header header'
+    'nav main'
+    'footer footer';
+    grid-template-columns: 1fr 5fr;
+}
+
+header {grid-area: header;
+        background-color: #FFDBEA;
+        color: #262323;
+        padding: 0.8rem;
+    }
+
+nav {grid-area: nav;
+    padding: 0px 30px;
+}
+
+main {grid-area: main;
+}
+
+footer {grid-area: footer;
+    background-color: #FFDBEA;
+    text-align: center;
+    padding: 3rem;
+}
+
+.galeria {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+
+    }
+
+.card img {width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+    opacity: 0.95;
+}
+
+.card img:hover {opacity: 1;}
+
+.card {display: flex;
+    flex-direction: column;
+    height: 520px;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+button {width: 100%;
+    color: #FAFAFA;
+    background-color: #262323;
+    height: 50px;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+button:hover {background-color: #343131;}
+
+.texto-card {padding: 0 10px;
+}
+
+.texto-card h2{ padding: 10px 0px;}
+
+.texto-card :nth-child(3) {padding: 10px 0px;
+    color: grey;
+    font-size: 14px;}
+
+.card:hover {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 
+        0 1px 3px rgba(0, 0, 0, 0.24);
+    }
+
+nav h2 {padding: 2rem 0rem 1rem 0rem;}
+
+ul li {font-size: 1.1rem;
+    padding: 1rem 0rem 1rem 0rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color:#262323 
+}
+
+nav {display: flex;
+    flex-direction: column; 
+}
+
+ul li:hover {color:#766b6b
+    }
